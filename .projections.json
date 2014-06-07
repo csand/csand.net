@@ -1,0 +1,19 @@
+{
+  "app/app.js": { "type": "app" },
+  "app/router.js": { "type": "router" },
+  "app/index.html": { "type": "index" },
+  "app/adapters/*.js": { "type": "adapter" },
+  "app/components/*.js": { "type": "component" },
+  "app/controllers/*.js": { "type": "controller" },
+  "app/helpers/*.js": { "type": "helper" },
+  "app/initializers/*.js": { "type": "initializer" },
+  "app/mixins/*.js": { "type": "mixin" },
+  "app/models/*.js": { "type": "model" },
+  "app/routes/*.js": { "type": "route" },
+  "app/styles/*.less": { "type": "style" },
+  "app/templates/*.hbs": { "type": "template" },
+  "app/views/*.js": { "type": "util" },
+  "app/utils/*.js": { "type": "view" },
+  "Brocfile.js": { "type": "broccoli" },
+  "config/environment.js": { "type": "env" }
+}
