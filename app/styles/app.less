@@ -11,6 +11,9 @@ body {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
   font-size: 18px;
+  @media (max-width: @isMobile) {
+    font-size: 14px;
+  }
 }
 
 nav {
@@ -97,10 +100,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   @media (max-width: @isMobile) {
     width: 100%;
+    padding: 0 5px;
   }
 }
 
 .muted {
   color: lighten(@textColor, 30%);
   font-size: 0.7em;
+}
+
+.glyphicon-chevron-left {
+  margin-left: -4px;
 }
