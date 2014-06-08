@@ -27,10 +27,4 @@ app.import('vendor/ic-ajax/dist/named-amd/main.js', {
   ]
 });
 
-app.import({
-  development: 'vendor/ember-animated-outlet/dist/ember-animated-outlet.js',
-  production: 'vendor/ember-animated-outlet/dist/ember-animated-outlet.min.js'
-});
-app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.css');
-
 module.exports = app.toTree();
