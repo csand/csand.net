@@ -12,8 +12,8 @@
   "app/routes/*.js": { "type": "route" },
   "app/styles/*.less": { "type": "style" },
   "app/templates/*.hbs": { "type": "template" },
-  "app/views/*.js": { "type": "util" },
-  "app/utils/*.js": { "type": "view" },
+  "app/views/*.js": { "type": "view" },
+  "app/utils/*.js": { "type": "util" },
   "Brocfile.js": { "type": "broccoli" },
   "config/environment.js": { "type": "env" }
 }

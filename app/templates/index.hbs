@@ -1,1 +1,17 @@
-Hello World
+<nav>
+  <ul>
+    {{#link-to 'about' tagName='li'}}
+      {{link-to 'About' 'about'}}
+    {{/link-to}}
+    <li {{action 'github'}}>
+      <a {{bind-attr href=githubUrl}}>
+        GitHub
+      </a>
+    </li>
+    <li {{action 'twitter'}}>
+      <a {{bind-attr href=twitterUrl}}>
+        Twitter
+      </a>
+    </li>
+  </ul>
+</nav>

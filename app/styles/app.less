@@ -1,0 +1,106 @@
+@backgroundColor: #F5F8FA;
+@textColor: #393B40;
+@anchorColor: #667499;
+@anchorHover: lighten(@anchorColor, 10%);
+@dividerColor: lighten(@anchorColor, 17%);
+@isMobile: 600px;
+
+body {
+  background-color: @backgroundColor;
+  color: @textColor;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+nav {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  width: 300px;
+  @media (max-width: 300px) {
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  li {
+    padding: 10px 0;
+    border: 0px solid transparent;
+    border-bottom: 6px solid;
+    border-image: radial-gradient(farthest-side, @dividerColor, @dividerColor 25%, @backgroundColor 55%);
+    border-image-slice: 0 0 100%;
+    color: @anchorColor;
+
+    &:hover {
+      background-image: radial-gradient(farthest-side, lighten(@backgroundColor, 4%), @backgroundColor 50%);
+      cursor: pointer;
+      color: @anchorHover;
+      a {
+        color: @anchorHover;
+      }
+    }
+
+    &:last-of-type, &:last-child {
+      border-bottom-width: 0;
+    }
+
+    .glyphicon {
+      font-size: 0.8em;
+    }
+  }
+}
+
+a {
+  color: @anchorColor;
+
+  &:hover {
+    color: @anchorHover;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: @anchorColor;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @anchorColor;
+}
+
+.offset-top {
+  margin-top: 30px;
+  @media (max-width: @isMobile) {
+    margin-top: 10px;
+  }
+}
+
+.hide-on-mobile {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.content {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  @media (max-width: @isMobile) {
+    width: 100%;
+  }
+}
+
+.muted {
+  color: lighten(@textColor, 30%);
+  font-size: 0.7em;
+}
